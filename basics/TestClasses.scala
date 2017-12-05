@@ -15,13 +15,21 @@ class C {
 }
 
 val c = new C
-println(c.minc
+println(c.minc)
 println(c.finc)
 
-class ScientificCalculaator(brand: String) extends Calculator(brand) {
+class ScientificCalculator(brand: String) extends Calculator {
   def log(m: Double, base: Double) = math.log(m) / math.log(base)
 }
 
-class EvenMoreScientificCalculator(brand: String) extens ScientificCalculaator(brand) {
-  def log(m: Int): Double = log(m, math.exp(1))
+// class EvenMoreScientificCalculator(brand: String) extends ScientificCalculaator(band) {
+//   def log(m: Int): Double = log(m, math.exp(1))
+// }
+
+class Greeter(perfix: String, suffix: String) {
+  def greet(name: String): Unit = 
+    println(perfix + name + suffix)
 }
+
+val greeter = new Greeter("Hello, ", "!")
+greeter.greet("Hello")

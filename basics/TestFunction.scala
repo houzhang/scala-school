@@ -36,3 +36,16 @@ def capitalizeAll(args: String*) = {
   }
 }
 println(capitalizeAll("rarity", "houzhang"))
+
+
+val addOne = (x: Int) => {
+  x + 1
+  x + 1
+}
+println(addOne(2))
+
+val getHouzhang = () => "Houzhang"
+println(getHouzhang())
+
+def name: String = "some name"
+println(name)
