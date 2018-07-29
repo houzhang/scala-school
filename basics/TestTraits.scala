@@ -14,7 +14,6 @@ class BMW extends Car with Shiny {
 println(new BMW().shineRefraction)
 
 
-
 trait Greeter {
   def greet(name: String): Unit = 
     println("Hello, " + name)
@@ -33,3 +32,14 @@ greeter.greet("Houzhang")
 
 val customGreeter = new CustomizableGreeter("Hey, ", "!")
 customGreeter.greet("Houzhang")
+
+trait Document {
+  val name: String;
+}
+
+case class XmlDocument(name: String, content: String) extends Document
+
+val xmlDocument = XmlDocument("test","I'm a Xml document")
+
+println(xmlDocument.name)
+
